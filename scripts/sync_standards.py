@@ -15,7 +15,7 @@ class StandardsSyncManager:
     def __init__(self):
         self.current_dir = Path.cwd()
         self.collaboration_folder = "ai_collaboration"
-        self.github_repo = "your-username/ai-collaboration-standards"
+        self.github_repo = "tutu8420/ai-collaboration-standards"
         
     def detect_current_project(self):
         """检测当前工作项目"""
