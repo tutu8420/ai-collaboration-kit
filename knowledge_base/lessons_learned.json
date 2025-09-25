@@ -1,0 +1,47 @@
+[
+  {
+    "timestamp": "2025-09-25T19:35:00.000000",
+    "category": "数据标注",
+    "title": "X-AnyLabeling类别映射陷阱",
+    "problem": "X-AnyLabeling导出时类别ID不匹配，导致所有标注都变成类别0",
+    "solution": "更新classes.txt为3类结构：background(0), monster(1), npc(2)，与GUI内部映射保持一致",
+    "lesson": "GUI工具的类别映射必须与配置文件完全一致，否则会导致标注错误",
+    "project": "D:\\GameAssetExtractor"
+  },
+  {
+    "timestamp": "2025-09-25T19:36:00.000000",
+    "category": "数据集管理",
+    "title": "图像和标注文件混合问题",
+    "problem": "images/labels目录与labels/train目录混淆，标注文件被错误放置在图像目录中",
+    "solution": "严格分离文件类型：labels目录只放.txt标注文件，images目录只放图像文件",
+    "lesson": "必须严格按照YOLO标准组织数据集结构，避免文件类型混乱",
+    "project": "D:\\GameAssetExtractor"
+  },
+  {
+    "timestamp": "2025-09-25T19:37:00.000000",
+    "category": "模型测试",
+    "title": "检测阈值的重要性",
+    "problem": "初始测试显示NPC检测率为0%，误以为模型训练失败",
+    "solution": "降低检测阈值从0.3到0.1，NPC检测率提升到60%",
+    "lesson": "不要被单一测试结果误导，检测阈值调优是关键，模型可能比想象中更好",
+    "project": "D:\\GameAssetExtractor"
+  },
+  {
+    "timestamp": "2025-09-25T19:38:00.000000",
+    "category": "协作效率",
+    "title": "上下文消耗管理",
+    "problem": "过度工程化回答导致上下文消耗过快，为简单问题写复杂验证代码",
+    "solution": "直接回答核心问题，避免不必要的复杂验证，平衡详细分析与简洁回答",
+    "lesson": "简洁回答与详细分析需要平衡，避免为证明简单事实而写复杂代码",
+    "project": "D:\\GameAssetExtractor"
+  },
+  {
+    "timestamp": "2025-09-25T19:39:00.000000",
+    "category": "需求理解",
+    "title": "避免错误引导的重要性",
+    "problem": "用户可能因技术知识不足给出错误引导，导致工作量增加",
+    "solution": "建立验证机制：需求理解→方案确认→分步执行→效果验证",
+    "lesson": "重要决策前必须确认理解，主动识别技术假设和风险，提供透明化决策过程",
+    "project": "D:\\GameAssetExtractor"
+  }
+]
