@@ -1,0 +1,34 @@
+{
+  "version": "1.1.0",
+  "last_updated": "2025-09-25",
+  "projects": [
+    {
+      "name": "GameAssetExtractor",
+      "path": "D:/GameAssetExtractor",
+      "type": "main",
+      "can_sync": true,
+      "description": "游戏资源提取和AI训练项目"
+    },
+    {
+      "name": "MerchantAI",
+      "path": "D:/MerchantAI",
+      "type": "main",
+      "can_sync": true,
+      "description": "AI辅助项目"
+    },
+    {
+      "name": "X-AnyLabeling-main",
+      "path": "D:/X-AnyLabeling-main",
+      "type": "main",
+      "can_sync": true,
+      "description": "模型训练项目"
+    }
+  ],
+  "github_repo": "your-username/ai-collaboration-standards",
+  "sync_settings": {
+    "auto_sync": true,
+    "sync_interval": "daily",
+    "backup_local": true,
+    "conflict_resolution": "github_wins"
+  }
+}
